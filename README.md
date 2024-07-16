@@ -35,9 +35,10 @@ Special thanks to the [AI Toolkit](https://github.com/AI-Toolkit)  for the inspi
 1. **Clone the Repository**
     ```sh
     git clone https://github.com/lazyelectrons/GenAI-LLM-Demo-Toolkit.git
+    ```
+    ```
     cd GenAI-LLM-Demo-Toolkit
     ```
-
 2. **Run the CUDA/Driver Installation Script**
     ```sh
     ./ai.sh
