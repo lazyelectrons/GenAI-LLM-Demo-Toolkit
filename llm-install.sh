@@ -25,7 +25,7 @@ echo "Downloading Models"
 #huggingface-cli download TheBloke/Llama-2-13B-chat-GPTQ --local-dir  ./text-generation-webui-docker/config/models/Llama-2-13B-chat-GPTQ
 huggingface-cli download microsoft/Phi-3-mini-4k-instruct  --local-dir ./text-generation-webui-docker/config/models/Phi-3-mini-4k-instruct
 echo "Starting LLM Chat UI"
-cd $./text-generation-webui-docker
+cd ./text-generation-webui-docker
 docker compose -f docker-compose-ob.yml up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
