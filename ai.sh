@@ -92,10 +92,9 @@ pip3 install huggingface_hub
 # install ntvop
 sudo apt-get install -y nvtop
 #---------------------------------------- #
-# ---------------------------------------- #
-# Print message to vKVM Console #
+#---------------------------------------- #
 echo "#---------------------------------------- #" 
-echo "Completed UCS-X GPU/AI driver/tools install" 
+echo "Completed GPU/AI driver/tools install" 
 echo "#---------------------------------------- #" 
 # Reboot #
 echo "Rebooting the system"
