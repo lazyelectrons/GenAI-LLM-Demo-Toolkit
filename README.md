@@ -3,7 +3,7 @@ This repository provides scripts to automate the installation of the GenAI (Gene
 
 This setup installs three application payloads in containers:
 - **[Oogaboogaa](https://github.com/oobabooga/text-generation-webui)** for LLM/Chat
-- **[OpenWebUI](https://github.com/open-webui/open-webui)** for RAG
+- **[OpenWebUI](https://github.com/open-webui/open-webui)** for Chat & RAG
 - **[Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** for image generation
 - **[AI Monitor](https://github.com/pl247/ai-monitor)** for GPU/CPU utilization monitoring 
 
@@ -55,6 +55,7 @@ Special thanks to the [AI Toolkit](https://github.com/AI-Toolkit)  for the inspi
 
     This command will install and textgen UI and, OpenWebUI, and dowload microsoft Phi model for textgen UI and start both applications.
     Once the installation is complete, you can access the LLM UI using the following URLs:
+    Note: It can take up to a minute to bring up the UI, depending on your compute/network speed.
 
     - ***Text Gen Web UI*** Web UI via `http://<serverIP>:7070`
     - ***Open Web UI***: Access via `http://<serverIP>:8080`
@@ -86,6 +87,7 @@ Special thanks to the [AI Toolkit](https://github.com/AI-Toolkit)  for the inspi
     ```
     This will install the stable diffusion image generator and start the application.
     You can access the image generation application via `http://<server IP>:7860`
+    Note: It can take up to a minute to bring up the UI, depending on your compute/network speed.
 
 8. **To stop the stable diffusion Image Gen**
     ```
