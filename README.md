@@ -45,7 +45,8 @@ Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspirati
     ```
 
    This script will install all necessary drivers, and platform tools and reboot the server.
-   After the reboot, you can proceed with the next steps.
+
+   After the **reboot**, you can proceed with the next steps.
 
 3. **Install and Start LLM/Web UI containers**
 
