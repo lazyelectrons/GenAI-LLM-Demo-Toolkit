@@ -1,6 +1,6 @@
 #!/bin/bash
 # ---------------------------------------- #
-# UCS-X   script for AI Demos
+# script for AI Demos
 # stop LLM containers
 # Jun 2024, rajeshvs
 # ---------------------------------------- #

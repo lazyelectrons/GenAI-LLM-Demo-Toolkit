@@ -1,5 +1,5 @@
 ## GenAI/LLM Demo Toolkit
-This repository provides scripts to automate the installation of the LLM/GenAI (Generative AI) software stack on a single node. Ideal for PoC (Proof of Concept), demonstration and testing purposes, this stack simplifies the setup process, allowing you to focus on exploring and evaluating various GenAI tools and capabilities.
+This repository provides scripts to automate the installation of the LLM/GenAI (Generative AI) software stack on a single node(server/pc). Ideal for PoC (Proof of Concept), demonstration and testing purposes, this stack simplifies the setup process, allowing you to focus on exploring and evaluating various GenAI tools and capabilities. You can also run [NIM/NGC](https://build.nvidia.com/explore/discover) containers on this node.
 
 This setup installs three application payloads in containers:
 - **[Oogaboogaa](https://github.com/oobabooga/text-generation-webui)** for LLM/Chat
@@ -9,17 +9,18 @@ This setup installs three application payloads in containers:
 
 This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs.
 
-Special thanks to the [AI Toolkit](https://github.com/AI-Toolkit)  for the inspiration.
+Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspiration.
 
 
 ### What's Included
 
-- **Installation Scripts**: Automated scripts to install all baseline packages and dependencies.
+- **Installation Scripts**: Automated scripts to install  baseline packages and dependencies.
 - **LLM Text Gen UI**: To run various models on the local node.
 - **OpenWebUI**: For RAG.
 - **Stable Diffusion**: For image generation.
 - **Docker Infrastructure**: In case you'd like to run Nvidia NIMs.
 - **Baseline Libraries**: Torch, Conda, and others, in case you like to experiment or run bare-metal loads.
+- ** 
 
 ### Requirements
 - **Operating System**: Ubuntu 22.04 LTS
@@ -99,5 +100,30 @@ Special thanks to the [AI Toolkit](https://github.com/AI-Toolkit)  for the inspi
     ```
     ./image-gen-start.sh
     ```
-    This will re-start the stable diffusion image generator .
+    This will re-start the stable diffusion image generator.
+
+10. Running Nvidia NIMs
+
+    You need the access/API key from Nvidia to access their repo/NIMs(container).
+    Here is an example script to run the llama3-8b-instruct NIM on this node
+
+    ```
+    docker login nvcr.io
+    user: $oauthtoken 
+    password: <API KEY>
+
+    export NGC_API_KEY=<KEY>
+    export LOCAL_NIM_CACHE=~/.cache/nim
+    mkdir -p "$LOCAL_NIM_CACHE"
+    docker run -it --rm \
+    --gpus all \
+    --shm-size=16GB \
+    -e NGC_API_KEY \
+    -v "$LOCAL_NIM_CACHE:/opt/nim/.cache" \
+    -u $(id -u) \
+    -p 8000:8000 \
+    nvcr.io/nim/meta/llama3-8b-instruct:1.0.0
+    ```
+
+
 
