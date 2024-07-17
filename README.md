@@ -9,7 +9,7 @@ This setup installs three application payloads in containers:
 
 This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs.
 
-Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspiration.
+Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the inspiration.
 
 
 ### What's Included
