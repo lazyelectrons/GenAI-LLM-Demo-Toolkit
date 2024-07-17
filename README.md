@@ -1,5 +1,5 @@
 ## GenAI/LLM Demo Toolkit
-This repository provides scripts to automate the installation of the GenAI (Generative AI) software stack on a single node. Ideal for demonstration and testing purposes, this stack simplifies the setup process, allowing you to focus on exploring and evaluating various GenAI tools and capabilities.
+This repository provides scripts to automate the installation of the LLM/GenAI (Generative AI) software stack on a single node. Ideal for PoC (Proof of Concept), demonstration and testing purposes, this stack simplifies the setup process, allowing you to focus on exploring and evaluating various GenAI tools and capabilities.
 
 This setup installs three application payloads in containers:
 - **[Oogaboogaa](https://github.com/oobabooga/text-generation-webui)** for LLM/Chat
