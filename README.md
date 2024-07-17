@@ -58,7 +58,7 @@ Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspirati
     Once the installation is complete, you can access the LLM UI using the following URLs:
     Note: It can take up to a minute to bring up the UI, depending on your compute/network speed.
 
-    - ***Text Gen Web UI*** Web UI via `http://<serverIP>:7070`
+    - ***Text Gen Web UI*** Access UI via `http://<serverIP>:7070`
     - ***Open Web UI***: Access via `http://<serverIP>:8080`
 
 
