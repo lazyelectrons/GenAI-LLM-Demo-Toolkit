@@ -68,7 +68,9 @@ Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspirati
     ```
     python /ai/ai-monitor/ai-monitor.py
     ```
-    You can monitor the CPU and GPU utliization on the terminal.
+    To monitor the CPU and GPU utliization.
+
+    You can also use  ``` nvtop ``` in the terminal window to monitor GPU performance.
 
 5. **To stop the LLM Containers**
     ```
