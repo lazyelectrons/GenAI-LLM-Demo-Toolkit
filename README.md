@@ -20,7 +20,6 @@ Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspirati
 - **Stable Diffusion**: For image generation.
 - **Docker Infrastructure**: In case you'd like to run Nvidia NIMs.
 - **Baseline Libraries**: Torch, Conda, and others, in case you like to experiment or run bare-metal loads.
-- ** 
 
 ### Requirements
 - **Operating System**: Ubuntu 22.04 LTS
