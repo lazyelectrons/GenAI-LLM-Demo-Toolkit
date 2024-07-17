@@ -83,6 +83,7 @@ sudo apt-get install -y python3-setuptools
 # install AI/ML libraries
 echo "**** Installing AI/ML Libraries ****"
 pip3 install torch torchvision torchaudio
+pip3 install psutil==6.0.0
 # AI Monitor # 
 sudo mkdir /ai
 sudo git -C /ai clone https://github.com/pl247/ai-monitor
