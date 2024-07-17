@@ -69,7 +69,7 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
     ./llm-install.sh
     ```
 
-    This command will install and textgen UI and, OpenWebUI, and dowload microsoft Phi-3-mini-4k-instruct model for textgen UI and start both applications.
+    This command will install the textgen UI and OpenWebUI, dowload microsoft Phi-3-mini-4k-instruct model for textgen UI and start both applications.
     Once the installation is complete, you can access the LLM UI using the following URLs:
     Note: It can take up to a minute to bring up the UI, depending on your compute/network speed.
 
@@ -148,4 +148,5 @@ The model name displayed on the Open WEB UI is incorrect and it is a known issue
 If you'd like to change the text-gen model, you can download them using text-gen UI or huggingface-cli
 
 Stable diffusion is running as a standalone container. 
+
 
