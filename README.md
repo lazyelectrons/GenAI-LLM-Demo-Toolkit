@@ -54,7 +54,7 @@ Special thanks to [AI Toolkit](https://github.com/AI-Toolkit)  for the inspirati
     ./llm-install.sh
     ```
 
-    This command will install and textgen UI and, OpenWebUI, and dowload microsoft Phi model for textgen UI and start both applications.
+    This command will install and textgen UI and, OpenWebUI, and dowload microsoft Phi-3-mini-4k-instruct model for textgen UI and start both applications.
     Once the installation is complete, you can access the LLM UI using the following URLs:
     Note: It can take up to a minute to bring up the UI, depending on your compute/network speed.
 
