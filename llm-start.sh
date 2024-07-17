@@ -1,6 +1,6 @@
 #!/bin/bash
 # ---------------------------------------- #
-# UCS-X  install script for AI Demos
+# install script for AI Demos
 # Install/start textgen container
 # Jun 2024, rajeshvs
 # ---------------------------------------- #
@@ -17,7 +17,7 @@ fi
 # start text generation container
 echo "Starting LLM Chat UI"
 cd ./text-generation-webui-docker
-docker compose -f ./text-generation-webui-docker/docker-compose-ob.yml  up -d
+docker compose -f docker-compose-ob.yml  up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
     echo "Model loader UI Started at http://198.19.5.70:7070" 
