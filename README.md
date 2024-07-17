@@ -1,8 +1,10 @@
 ## GenAI/LLM Demo Toolkit
 This repository provides scripts to automate the installation of the LLM/GenAI (Generative AI) software stack on a single node(server/pc). Ideal for PoC (Proof of Concept), demonstration and testing purposes, this stack simplifies the setup process, allowing you to focus on exploring and evaluating various GenAI tools and capabilities. You can also run [NIM/NGC](https://build.nvidia.com/explore/discover) containers on this node.
 
-This setup installs three application payloads in containers:
+This toolkit installs the following  payloads in containers:
+
 - **[Oogaboogaa](https://github.com/oobabooga/text-generation-webui)** for LLM/Chat
+    - **[oogabooga container](https://github.com/Atinoda/text-generation-webui-docker)** oogabooga container
 - **[OpenWebUI](https://github.com/open-webui/open-webui)** for Chat & RAG
 - **[Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** for image generation
 - **[AI Monitor](https://github.com/pl247/ai-monitor)** for GPU/CPU utilization monitoring 
@@ -10,6 +12,19 @@ This setup installs three application payloads in containers:
 This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs.
 
 Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the inspiration.
+
+
+### Text GEN UI
+<a href="textgenui.png"> <img src="textgenui.png" alt="Text Gen UI" width="1024" height="768"/></a>
+
+### Open Web UI
+<a href="owui.png"> <img src="owui.png" alt="OpenWebUI" width="1024" height="768"/></a>
+
+### RAG
+<a href="rag.png"> <img src="rag.png" alt="OpenWebUI/RAG" width="1024" height="768"/></a>
+
+### Stable Diffusion
+<a href="imggen.png"> <img src="imggen.png" alt="Stable Diff Image Gen" width="1024" height="768"/></a>
 
 
 ### What's Included
@@ -127,5 +142,10 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
     nvcr.io/nim/meta/llama3-8b-instruct:1.0.0
     ```
 
+### Behind the scenes
+Text Gen UI is deployed with API support. Open WEBUI connects to the text-gen API port for Chat/RAG.
+The model name displayed on the Open WEB UI is incorrect and it is a known issue. 
+If you'd like to change the text-gen model, you can download them using text-gen UI or huggingface-cli
 
+Stable diffusion is running as a standalone container. 
 
