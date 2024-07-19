@@ -39,7 +39,7 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
 ### Requirements
 - **Operating System**: Ubuntu 22.04 LTS
 - **Hardware**: 
-  - NVIDIA GPU with CUDA support
+  - NVIDIA GPUs (1 or more) with CUDA support
   - At least 100 GB free disk space
 - **Software**:
   - ubuntu minimal install
