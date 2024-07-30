@@ -7,7 +7,7 @@ services:
         - WEBUI_AUTH=false
         - WEBUI_NAME=Cisco dCloud
         - OPENAI_API_KEY=dummy
-        - OPENAI_API_BASE_URL=http://198.19.5.70:5000/v1
+        - OPENAI_API_BASE_URL=http://${API_IP}:5000/v1
         - DEFAULT_MODELS=gpt-3.5-turbo
         - RAG_EMBEDDING_MODEL=sentence-transformers/paraphrase-MiniLM-L6-v2
     container_name: open-webui
