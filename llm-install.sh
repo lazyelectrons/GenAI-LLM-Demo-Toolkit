@@ -24,12 +24,13 @@ echo "Downloading Models"
 #huggingface-cli download TheBloke/Wizard-Vicuna-13B-Uncensored-HF --local-dir  ./text-generation-webui-docker/config/models/Wizard-Vicuna-13B-Uncensored-HF
 #huggingface-cli download TheBloke/Llama-2-13B-chat-GPTQ --local-dir  ./text-generation-webui-docker/config/models/Llama-2-13B-chat-GPTQ
 huggingface-cli download microsoft/Phi-3-mini-4k-instruct  --local-dir ./text-generation-webui-docker/config/models/Phi-3-mini-4k-instruct
+IP=$(hostname --ip-address)
 echo "Starting LLM Chat UI"
 cd ./text-generation-webui-docker
 docker compose -f docker-compose-ob.yml up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
-    echo "Model loader UI Started at http://198.19.5.70:7070"
+    echo "Model loader UI Started at http://$IP:7070"
     echo "**********************************************************************************"
 else
     echo "###### Error: Chat UI did not start, check the logs ######"
@@ -44,7 +45,7 @@ cd ../
 docker compose -f docker-compose-ow.yml up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
-    echo "RAG/Chat UI Started at http://198.19.5.70:8080"
+    echo "RAG/Chat UI Started at http://$IP:8080"
     echo "**********************************************************************************"
 else
     echo "###### Error: Install failed for OpenWebUI ######"
