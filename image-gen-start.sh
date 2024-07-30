@@ -5,7 +5,7 @@
 # Jun 2024, rajeshvs
 # ---------------------------------------- #
 # Starting AI Image generation
-IP=$(hostname --ip-address)
+IP=$(hostname)
 cd ./stable-diffusion-webui-docker/
 docker compose --profile auto  up --build -d
 if [[ $? -eq 0 ]]; then

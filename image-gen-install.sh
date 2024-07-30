@@ -7,7 +7,7 @@
 # Starting AI Image generation
 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker
 cd stable-diffusion-webui-docker/
-IP=$(hostname --ip-address)
+IP=$(hostname)
 docker compose --profile auto  up --build -d
 if [[ $? -eq 0 ]]; then
     echo "**************************************************"

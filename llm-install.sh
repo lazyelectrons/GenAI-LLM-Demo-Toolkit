@@ -24,7 +24,7 @@ echo "Downloading Models"
 #huggingface-cli download TheBloke/Wizard-Vicuna-13B-Uncensored-HF --local-dir  ./text-generation-webui-docker/config/models/Wizard-Vicuna-13B-Uncensored-HF
 #huggingface-cli download TheBloke/Llama-2-13B-chat-GPTQ --local-dir  ./text-generation-webui-docker/config/models/Llama-2-13B-chat-GPTQ
 huggingface-cli download microsoft/Phi-3-mini-4k-instruct  --local-dir ./text-generation-webui-docker/config/models/Phi-3-mini-4k-instruct
-IP=$(hostname --ip-address)
+IP=$(hostname)
 echo "Starting LLM Chat UI"
 cd ./text-generation-webui-docker
 docker compose -f docker-compose-ob.yml up -d

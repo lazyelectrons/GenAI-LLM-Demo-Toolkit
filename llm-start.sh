@@ -17,7 +17,7 @@ fi
 # start text generation container
 echo "Starting LLM Chat UI"
 cd ./text-generation-webui-docker
-IP=$(hostname --ip-address)
+IP=$(hostname)
 docker compose -f docker-compose-ob.yml  up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
