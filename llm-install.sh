@@ -42,8 +42,7 @@ echo "Starting RAG Chat UI"
 # check it with curl http://<server IP>:5000/v1/models 
 #
 cd ../
-API_IP=$IP
-docker compose -f docker-compose-ow.yml up -d
+API_IP=$IP docker compose -f docker-compose-ow.yml up -d
 if [[ $? -eq 0 ]]; then
     echo "**********************************************************************************"
     echo "RAG/Chat UI Started at http://$IP:8080"
