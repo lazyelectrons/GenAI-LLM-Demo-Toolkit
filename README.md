@@ -152,5 +152,5 @@ Stable diffusion is running as a standalone container.
 ### Troubleshooting
 All paths are relative, ensure you run the scripts exactly as specified above.
 If you have multiple network interfaces, ensure the docker binding is on the correct interface.
-Check $HOME/ucsx-ai.log file for driver install log
+Check $HOME/ucsx-ai.log file for driver install log.
 To troubleshoot container start-up, run each container manually to isolate the error.
