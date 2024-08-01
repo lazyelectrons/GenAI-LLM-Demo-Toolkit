@@ -158,7 +158,7 @@ If you have multiple network interfaces, ensure the docker binding is on the cor
 
 To troubleshoot container start-up, run each container manually to isolate the error.
 
-If openweb UI is not listing the model, check ping <hostname> on the server and ensure it's resolving to an interface IP, not 127.0.0.1.
+If openweb UI is not listing the model, run ```ping <hostname>``` on the server and ensure it's resolving to an interface IP, not 127.0.0.1.
 If it is pinging to 127.0.0.1, edit /etc/hosts and make sure 127.0.0.1 is not pointing to the hostname
 ```
            IPAddress     Hostname    		
