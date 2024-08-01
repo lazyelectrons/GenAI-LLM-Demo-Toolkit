@@ -141,6 +141,7 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
     -p 8000:8000 \
     nvcr.io/nim/meta/llama3-8b-instruct:1.0.0
     ```
+Note: You need have access to specific NIMs to download/run them locally.Securing an Nvidia API key will not get you NIM download access.
 
 ### Behind the scenes
 Text Gen UI is deployed with API support. Open WEBUI connects to the text-gen API port for Chat/RAG.
