@@ -150,7 +150,24 @@ If you'd like to change the text-gen model, you can download them using text-gen
 Stable diffusion is running as a standalone container. 
 
 ### Troubleshooting
+
 All paths are relative, ensure you run the scripts exactly as specified above.
-If you have multiple network interfaces, ensure the docker binding is on the correct interface.
 Check $HOME/ucsx-ai.log file for driver install log.
+
+If you have multiple network interfaces, ensure the docker binding is on the correct interface.
+
 To troubleshoot container start-up, run each container manually to isolate the error.
+
+If openweb UI is not listing the model, check ping <hostname> on the server and ensure it's resolving to an interface IP, not 127.0.0.1.
+If it is pinging to 127.0.0.1, edit /etc/hosts and make sure 127.0.0.1 is not pointing to the hostname
+```
+           IPAddress     Hostname    		
+            127.0.0.1			localhost	 	
+            10.1.1.1            my-llm-host
+
+```
+You can also verify the same by issuing ```hostname -i ``` to ensure it returms only one interface IP, not loopbacks.
+
+Or you can edit  docker-compose-ow.yml file and update the following section with server interface IP and restart the containers with ```./llm-stop.sh``` and ```./llm-start.sh```
+
+        - OPENAI_API_BASE_URL=http://<IP Address>:5000/v1
