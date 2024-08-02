@@ -5,11 +5,12 @@ services:
     image: ghcr.io/open-webui/open-webui:main
     environment:
         - WEBUI_AUTH=false
-        - WEBUI_NAME=Cisco dCloud
+        - WEBUI_NAME=LLM Chatbot
         - OPENAI_API_KEY=dummy
         - OPENAI_API_BASE_URL=http://${API_IP}:5000/v1
         - DEFAULT_MODELS=gpt-3.5-turbo
         - RAG_EMBEDDING_MODEL=sentence-transformers/paraphrase-MiniLM-L6-v2
+        - ENABLE_OLLAMA_API=false
     container_name: open-webui
     volumes:
       - open-webui:/app/backend/data
