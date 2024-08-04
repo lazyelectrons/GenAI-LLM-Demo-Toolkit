@@ -11,9 +11,9 @@ exec > >(tee -i $LOG_FILE) 2>&1
 sudo systemctl stop apparmor
 sudo systemctl disable apparmor
 # update the system
-echo "** Updaring Packages **" 
+echo "** Updating Packages **" 
 sudo apt-get update
-#install Cuda 12.5
+# install Cuda 12.5
 echo "Installing Cuda"
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
