@@ -6,7 +6,8 @@ This toolkit installs the following  payloads in containers:
 - **[Oogaboogaa](https://github.com/oobabooga/text-generation-webui)** for LLM/Chat
     - **[oogabooga container](https://github.com/Atinoda/text-generation-webui-docker)** oogabooga container
 - **[OpenWebUI](https://github.com/open-webui/open-webui)** for Chat & RAG
-- **[Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** for image generation
+- **[Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** for image generation
+    - **[Stable Diffusion WebUI Container](https://github.com/AbdBarho/stable-diffusion-webui-docker)** Container
 - **[AI Monitor](https://github.com/pl247/ai-monitor)** for GPU/CPU utilization monitoring 
 
 This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs.
