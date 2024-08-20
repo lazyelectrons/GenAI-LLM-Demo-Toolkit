@@ -5,7 +5,9 @@
 # Jun 2024, rajeshvs
 # ---------------------------------------- #
 # Starting AI Image generation
-git clone https://github.com/AbdBarho/stable-diffusion-webui-docker
+#git clone https://github.com/AbdBarho/stable-diffusion-webui-docker
+#Forked to fix issue 719
+git clone https://github.com/lazyelectrons/stable-diffusion-webui-docker
 cd stable-diffusion-webui-docker/
 IP=$(hostname)
 docker compose --profile auto  up --build -d
