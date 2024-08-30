@@ -1,7 +1,7 @@
 #!/bin/bash
 # ---------------------------------------- #
 # Driver  install script for AI/LLM workloads
-# For x86_64/Ubuntu 20.04 LTS
+# For x86_64/Ubuntu 22.04 LTS
 # Jun 2024, rajeshvs
 # ---------------------------------------- #
 # update the system
@@ -17,8 +17,8 @@ sudo apt-get update
 echo "Installing Cuda"
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt install -y cuda-toolkit-12-5
 sudo apt-get update
+sudo apt install -y cuda-toolkit-12-5
 # Local install of Cuda
 #wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
 #sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
