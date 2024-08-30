@@ -48,8 +48,9 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
 
 ### Installation Instructions
 
-1. **Clone the Repository**
+1. **Clone the Repository to your home directory**
     ```sh
+    cd 
     git clone https://github.com/lazyelectrons/GenAI-LLM-Demo-Toolkit.git
     ```
     ```
