@@ -10,7 +10,7 @@ This toolkit installs the following  payloads in containers:
     - **[Stable Diffusion WebUI Container](https://github.com/AbdBarho/stable-diffusion-webui-docker)** Container
 - **[AI Monitor](https://github.com/pl247/ai-monitor)** for GPU/CPU utilization monitoring 
 
-This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs.
+This enables you to quickly configure a system with a GPU to run open-source GenAI/LLMs locally. Currently, it supports NVIDIA GPUs. Refer to the documentation from respective repository for detailed instrutions.
 
 Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the inspiration.
 
@@ -78,6 +78,7 @@ Special thanks to [AI Toolkit](https://github.com/pl247/ai-toolkit)  for the ins
     - ***Text Gen Web UI*** Access UI via `http://<serverIP>:7070`
     - ***Open Web UI***: Access via `http://<serverIP>:8080`
 
+Note: Check the troubleshooting if you are facing issues with Open Web UI.
 
 4. **Monitor GPU/CPU Utilization**
 
@@ -147,10 +148,12 @@ Note: You need have access to specific NIMs to download/run them locally.Securin
 
 ### Behind the scenes
 Text Gen UI is deployed with API support. Open WEBUI connects to the text-gen API port for Chat/RAG.
-The model name displayed on the Open WEB UI is incorrect and it is a known issue. 
-If you'd like to change the text-gen model, you can download them using text-gen UI or huggingface-cli
+The model name displayed on the Open WEB UI is maintained for compatibility with OpenAI API.
 
-Stable diffusion is running as a standalone container. 
+The default model for text gen is Microsoft Phi. It's highly recommended to update the model to llama2.x or 3.x or similar for better performance, especially on RAG. You can do that via text gen web UI or manually using huggingface cli
+```
+huggingface-cli download meta-llama/Meta-Llama-3.1-8B-Instruct --local-dir ~/text-generation-webui-docker/config/models/Meta-Llama-3.1-8B-Instruct --token <your HF token> 
+```
 
 ### Troubleshooting
 
